@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+
+}
+
+.container {
+    width: 75vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.testimonials {
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    width: 2rem;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 2px;
+}
+
+/*Testimonials Placing*/
+.one {
+    background-color: hsl(263, 55%, 52%);
+    grid-column: 1/3;
+    grid-row: 1;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 350px 0px;
+}
+.two {
+    background-color: hsl(217, 19%, 35%);
+    grid-column: 3/4;
+    grid-row: 1;
+}
+.three {
+    background-color: #fff;
+    grid-column: 1/2;
+    grid-row: 2;
+}
+.four {
+    background-color: hsl(219, 29%, 14%);
+    color: #fff;
+    grid-column: 2/4;
+    grid-row: 2;
+}
+.five {
+    background-color: #fff;
+    grid-column: 4;
+    grid-row: 1/3;
+}
+
+
+.shadow {
+    box-shadow: 4px 4px 45px 1px #ccc;
+
+}
+
+
+.one .top, .two .top, .four .top{
+    color: #fff;
+
+}
+
+.one .end, .two .end, .four .end {
+    color: hsl(0, 0%, 81%);
+}
+
+.one .author, .two .author, .four .author {
+    color: #fff;
+}
+
+.one .statue, .two .statue, .four .statue {
+    color: hsl(0, 0%, 81%);
+}
+
+
+.top {
+    font-weight: 600;
+    font-size: 1rem;
+    color: hsl(219, 29%, 14%);
+}
+.top-content {
+    margin-top: 0.7rem;
+}
+
+
+.end {
+    font-size: 0.7rem;
+    color: hsl(219, 29%, 14%);
+}
+
+.end-content {
+    margin-top: 1rem;
+    line-height: 90%;
+}
+
+.author {
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+.statue {
+    font-size: 0.6rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+.image {
+    display: flex;
+    align-items: center;
+}
